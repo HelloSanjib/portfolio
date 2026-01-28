@@ -43,10 +43,15 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <div className="hidden md:flex items-center gap-3">
-            <button className="btn-secondary inline-flex items-center gap-2">
+            <a
+              href="https://drive.google.com/uc?export=download&id=17R1juNVC7bA84sYkIklCjsSXK-LkKOyy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary inline-flex items-center gap-2"
+            >
               <Download size={18} />
               <span>Resume</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
