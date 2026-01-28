@@ -76,10 +76,15 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <button className="w-full btn-secondary mt-4 inline-flex items-center justify-center gap-2">
+            <a
+              href="https://drive.google.com/uc?export=download&id=17R1juNVC7bA84sYkIklCjsSXK-LkKOyy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full btn-secondary mt-4 inline-flex items-center justify-center gap-2"
+            >
               <Download size={18} />
               <span>Resume</span>
-            </button>
+            </a>
           </div>
         )}
       </div>
