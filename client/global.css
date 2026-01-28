@@ -101,6 +101,10 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -114,5 +118,36 @@
   code {
     overflow-x: auto;
     white-space: pre;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    @apply bg-gradient-to-r from-accent to-secondary;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold font-display text-foreground mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-muted-foreground mb-12;
+  }
+
+  .glow-border {
+    @apply border border-accent/20 rounded-xl;
+    background: linear-gradient(135deg, rgba(198, 93, 255, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+  }
+
+  .glass-effect {
+    @apply bg-card/50 backdrop-blur-sm border border-border/50;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2.5 rounded-lg bg-accent text-accent-foreground font-semibold transition-all hover:scale-105 active:scale-95 hover:shadow-lg hover:shadow-accent/30;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-2.5 rounded-lg border border-accent/50 text-accent font-semibold transition-all hover:bg-accent/10 active:scale-95;
   }
 }
