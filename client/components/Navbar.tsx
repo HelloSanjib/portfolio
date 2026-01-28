@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { Menu, X, Download } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Menu, X, Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Education', href: '#education' },
-    { label: 'Certifications', href: '#certifications' },
-    { label: 'Contact', href: '#contact' },
+    { label: "Home", href: "#home" },
+    { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Education", href: "#education" },
+    { label: "Certifications", href: "#certifications" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -24,7 +24,9 @@ export default function Navbar() {
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">SB</span>
               </div>
-              <span className="hidden sm:inline font-bold text-lg text-foreground">Sanjib Biswal</span>
+              <span className="hidden sm:inline font-bold text-lg text-foreground">
+                Sanjib Biswal
+              </span>
             </Link>
           </div>
 

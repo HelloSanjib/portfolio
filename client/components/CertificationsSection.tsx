@@ -1,33 +1,33 @@
-import { Award } from 'lucide-react';
+import { Award } from "lucide-react";
 
 const certifications = [
   {
     id: 1,
-    title: 'Hack Odisha 5',
-    description: 'Plant Disease Prediction System',
-    icon: '🏆',
+    title: "Hack Odisha 5",
+    description: "Plant Disease Prediction System",
+    icon: "🏆",
   },
   {
     id: 2,
-    title: 'Infosys Frontend Web Developer',
-    description: 'Professional certification in frontend development',
-    icon: '🎖️',
+    title: "Infosys Frontend Web Developer",
+    description: "Professional certification in frontend development",
+    icon: "🎖️",
   },
   {
     id: 3,
-    title: 'Infosys Networking',
-    description: 'Network fundamentals and protocols',
-    icon: '🔗',
+    title: "Infosys Networking",
+    description: "Network fundamentals and protocols",
+    icon: "🔗",
   },
   {
     id: 4,
-    title: 'Sheryians Backend Developer',
-    description: 'Backend development with modern technologies',
-    icon: '⚙️',
+    title: "Sheryians Backend Developer",
+    description: "Backend development with modern technologies",
+    icon: "⚙️",
   },
 ];
 
-function CertificationCard({ cert }: { cert: typeof certifications[0] }) {
+function CertificationCard({ cert }: { cert: (typeof certifications)[0] }) {
   return (
     <div className="glow-border p-6 rounded-lg hover:border-accent/50 transition-all duration-300 flex items-start gap-4">
       <div className="text-4xl flex-shrink-0">{cert.icon}</div>

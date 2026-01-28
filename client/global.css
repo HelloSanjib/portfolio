@@ -136,7 +136,11 @@
 
   .glow-border {
     @apply border border-accent/20 rounded-xl;
-    background: linear-gradient(135deg, rgba(198, 93, 255, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(198, 93, 255, 0.1) 0%,
+      rgba(56, 189, 248, 0.1) 100%
+    );
   }
 
   .glass-effect {

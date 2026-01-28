@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,10 +13,13 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <span className="text-white font-bold">SB</span>
               </div>
-              <span className="font-bold text-lg text-foreground">Sanjib Biswal</span>
+              <span className="font-bold text-lg text-foreground">
+                Sanjib Biswal
+              </span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Full-stack developer passionate about building modern web applications.
+              Full-stack developer passionate about building modern web
+              applications.
             </p>
           </div>
 
@@ -25,22 +28,34 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                <a
+                  href="#home"
+                  className="text-muted-foreground hover:text-accent transition-colors text-sm"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                <a
+                  href="#projects"
+                  className="text-muted-foreground hover:text-accent transition-colors text-sm"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                <a
+                  href="#skills"
+                  className="text-muted-foreground hover:text-accent transition-colors text-sm"
+                >
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                <a
+                  href="#contact"
+                  className="text-muted-foreground hover:text-accent transition-colors text-sm"
+                >
                   Contact
                 </a>
               </li>

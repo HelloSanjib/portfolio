@@ -1,16 +1,18 @@
-import { Mail, Phone, Github, Linkedin, MessageCircle } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Phone, Github, Linkedin, MessageCircle } from "lucide-react";
+import { useState } from "react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -21,9 +23,9 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real app, you would send this data to a server
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     setSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: "", email: "", message: "" });
     setTimeout(() => setSubmitted(false), 3000);
   };
 
@@ -31,7 +33,9 @@ export default function ContactSection() {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title">Get In Touch</h2>
-        <p className="section-subtitle">Let's connect and create something amazing</p>
+        <p className="section-subtitle">
+          Let's connect and create something amazing
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {/* Email */}
@@ -45,7 +49,9 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <p className="text-foreground font-semibold break-all">sanjibbiswal689@gmail.com</p>
+                <p className="text-foreground font-semibold break-all">
+                  sanjibbiswal689@gmail.com
+                </p>
               </div>
             </div>
           </a>
@@ -86,7 +92,9 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Social</p>
-              <p className="text-foreground font-semibold text-sm">GitHub, LinkedIn</p>
+              <p className="text-foreground font-semibold text-sm">
+                GitHub, LinkedIn
+              </p>
             </div>
           </div>
         </div>
@@ -96,7 +104,10 @@ export default function ContactSection() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-semibold text-foreground mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -111,7 +122,10 @@ export default function ContactSection() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold text-foreground mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -128,7 +142,10 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-semibold text-foreground mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -144,12 +161,17 @@ export default function ContactSection() {
             </div>
 
             <div className="flex items-center gap-4">
-              <button type="submit" className="btn-primary inline-flex items-center gap-2">
+              <button
+                type="submit"
+                className="btn-primary inline-flex items-center gap-2"
+              >
                 <MessageCircle size={20} />
                 Send Message
               </button>
               {submitted && (
-                <p className="text-accent font-semibold animate-fade-up">Message sent successfully! 🎉</p>
+                <p className="text-accent font-semibold animate-fade-up">
+                  Message sent successfully! 🎉
+                </p>
               )}
             </div>
           </form>

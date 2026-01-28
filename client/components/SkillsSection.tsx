@@ -1,23 +1,32 @@
 const skillCategories = [
   {
-    title: 'Languages',
-    skills: ['Java', 'Python', 'JavaScript', 'C'],
+    title: "Languages",
+    skills: ["Java", "Python", "JavaScript", "C"],
   },
   {
-    title: 'Web Development',
-    skills: ['React', 'Node.js', 'Express.js', 'Tailwind CSS', 'WebRTC'],
+    title: "Web Development",
+    skills: ["React", "Node.js", "Express.js", "Tailwind CSS", "WebRTC"],
   },
   {
-    title: 'Databases',
-    skills: ['PostgreSQL', 'MongoDB', 'Firebase', 'ConvexDB'],
+    title: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "Firebase", "ConvexDB"],
   },
   {
-    title: 'DevOps & Cloud',
-    skills: ['Docker', 'CI/CD', 'AWS', 'GCP', 'Kubernetes', 'Jenkins', 'Grafana', 'Container Orchestration'],
+    title: "DevOps & Cloud",
+    skills: [
+      "Docker",
+      "CI/CD",
+      "AWS",
+      "GCP",
+      "Kubernetes",
+      "Jenkins",
+      "Grafana",
+      "Container Orchestration",
+    ],
   },
   {
-    title: 'Soft Skills',
-    skills: ['Communication', 'Analytical Thinking', 'Problem Solving'],
+    title: "Soft Skills",
+    skills: ["Communication", "Analytical Thinking", "Problem Solving"],
   },
 ];
 
@@ -48,7 +57,11 @@ export default function SkillsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category) => (
-            <SkillCard key={category.title} title={category.title} skills={category.skills} />
+            <SkillCard
+              key={category.title}
+              title={category.title}
+              skills={category.skills}
+            />
           ))}
         </div>
       </div>

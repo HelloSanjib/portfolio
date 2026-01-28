@@ -1,8 +1,11 @@
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-20">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-20"
+    >
       {/* Background gradient */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-30"></div>
@@ -15,7 +18,10 @@ export default function HeroSection() {
           <div className="space-y-8 animate-fade-up">
             <div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display text-foreground leading-tight">
-                Hi, I'm <span className="gradient-primary bg-clip-text text-transparent">Sanjib Biswal</span>
+                Hi, I'm{" "}
+                <span className="gradient-primary bg-clip-text text-transparent">
+                  Sanjib Biswal
+                </span>
               </h1>
             </div>
 
@@ -24,7 +30,9 @@ export default function HeroSection() {
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Computer Science student with hands-on experience in MERN stack, AI/ML basics, and DevOps tools. Passionate about building scalable full-stack applications and cloud-native solutions.
+              Computer Science student with hands-on experience in MERN stack,
+              AI/ML basics, and DevOps tools. Passionate about building scalable
+              full-stack applications and cloud-native solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -34,7 +42,10 @@ export default function HeroSection() {
                 className="btn-primary inline-flex items-center justify-center gap-2 group"
               >
                 View Projects
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                <ArrowRight
+                  size={20}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
               </a>
               <a
                 href="#contact"
@@ -47,7 +58,10 @@ export default function HeroSection() {
           </div>
 
           {/* Right side - Profile image with glow effect */}
-          <div className="flex items-center justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <div
+            className="flex items-center justify-center animate-fade-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-accent via-secondary to-accent rounded-full blur-2xl opacity-50 animate-glow"></div>
@@ -63,7 +77,10 @@ export default function HeroSection() {
 
               {/* Decorative elements */}
               <div className="absolute top-10 right-10 w-12 h-12 rounded-lg border-2 border-accent/30 animate-pulse"></div>
-              <div className="absolute bottom-10 left-10 w-16 h-16 rounded-full border-2 border-secondary/30 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              <div
+                className="absolute bottom-10 left-10 w-16 h-16 rounded-full border-2 border-secondary/30 animate-pulse"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
             </div>
           </div>
         </div>
@@ -71,8 +88,18 @@ export default function HeroSection() {
         {/* Scroll indicator */}
         <div className="flex justify-center mt-20">
           <div className="animate-bounce">
-            <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            <svg
+              className="w-6 h-6 text-accent"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
             </svg>
           </div>
         </div>

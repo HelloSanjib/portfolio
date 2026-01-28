@@ -6,8 +6,8 @@ export default {
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui', 'sans-serif'],
-      display: ['Poppins', 'system-ui', 'sans-serif'],
+      sans: ["Inter", "system-ui", "sans-serif"],
+      display: ["Poppins", "system-ui", "sans-serif"],
     },
     container: {
       center: true,
@@ -94,7 +94,7 @@ export default {
             transform: "translateY(0)",
           },
         },
-        "glow": {
+        glow: {
           "0%, 100%": {
             opacity: "0.5",
           },
@@ -107,7 +107,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out",
-        "glow": "glow 3s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite",
       },
     },
   },

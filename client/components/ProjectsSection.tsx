@@ -1,62 +1,67 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: 'AI Agentic Video Content Generator',
-    description: 'A SaaS platform that uses AI agents to automatically generate, edit, and optimize video content for social media and marketing.',
-    tags: ['React', 'Node.js', 'MongoDB', 'AI', 'Claude API'],
+    title: "AI Agentic Video Content Generator",
+    description:
+      "A SaaS platform that uses AI agents to automatically generate, edit, and optimize video content for social media and marketing.",
+    tags: ["React", "Node.js", "MongoDB", "AI", "Claude API"],
     links: {
-      code: '#',
-      live: '#',
+      code: "#",
+      live: "#",
     },
   },
   {
     id: 2,
-    title: 'AI Agent Chat Application',
-    description: 'An intelligent chat application powered by AI agents, featuring real-time conversations, context awareness, and multi-turn dialogue capabilities.',
-    tags: ['React', 'Express.js', 'WebSocket', 'AI', 'OpenAI'],
+    title: "AI Agent Chat Application",
+    description:
+      "An intelligent chat application powered by AI agents, featuring real-time conversations, context awareness, and multi-turn dialogue capabilities.",
+    tags: ["React", "Express.js", "WebSocket", "AI", "OpenAI"],
     links: {
-      code: '#',
-      live: '#',
+      code: "#",
+      live: "#",
     },
   },
   {
     id: 3,
-    title: 'AI-Powered Receipt Tracker',
-    description: 'A SaaS expense management tool that uses OCR and AI to automatically extract data from receipts and categorize expenses.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'OCR', 'AI'],
+    title: "AI-Powered Receipt Tracker",
+    description:
+      "A SaaS expense management tool that uses OCR and AI to automatically extract data from receipts and categorize expenses.",
+    tags: ["React", "Node.js", "PostgreSQL", "OCR", "AI"],
     links: {
-      code: '#',
-      live: '#',
+      code: "#",
+      live: "#",
     },
   },
   {
     id: 4,
-    title: 'Reddit-Style Platform with AI Moderation',
-    description: 'A community platform with threaded discussions, voting system, and AI-powered content moderation for spam and harmful content detection.',
-    tags: ['React', 'Express.js', 'PostgreSQL', 'AI Moderation', 'WebSocket'],
+    title: "Reddit-Style Platform with AI Moderation",
+    description:
+      "A community platform with threaded discussions, voting system, and AI-powered content moderation for spam and harmful content detection.",
+    tags: ["React", "Express.js", "PostgreSQL", "AI Moderation", "WebSocket"],
     links: {
-      code: '#',
-      live: '#',
+      code: "#",
+      live: "#",
     },
   },
 ];
 
-function ProjectCard({ project }: { project: typeof projects[0] }) {
+function ProjectCard({ project }: { project: (typeof projects)[0] }) {
   return (
     <div className="glow-border p-6 rounded-xl group hover:border-accent/50 transition-all duration-300">
       <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
         {project.title}
       </h3>
-      <p className="text-muted-foreground mb-4">
-        {project.description}
-      </p>
-      
+      <p className="text-muted-foreground mb-4">{project.description}</p>
+
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-6">
         {project.tags.map((tag) => (
-          <span key={tag} className="px-3 py-1 text-xs font-medium rounded-full bg-accent/10 text-accent">
+          <span
+            key={tag}
+            className="px-3 py-1 text-xs font-medium rounded-full bg-accent/10 text-accent"
+          >
             {tag}
           </span>
         ))}
