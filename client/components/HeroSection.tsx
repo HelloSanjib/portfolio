@@ -51,15 +51,14 @@ export default function HeroSection() {
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-accent via-secondary to-accent rounded-full blur-2xl opacity-50 animate-glow"></div>
-              
+
               {/* Profile image container */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-accent/30 bg-gradient-to-br from-card to-card/50 shadow-2xl flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-br from-accent/20 via-secondary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-8xl">👨‍💻</div>
-                    <p className="text-muted-foreground mt-4 text-sm">Full-Stack Developer</p>
-                  </div>
-                </div>
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-accent/30 bg-gradient-to-br from-card to-card/50 shadow-2xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F726a516ecba646cbb3ecb58fab02302e%2Fd8343242d64e4ee588bbf5fd62cbe977?format=webp&width=800&height=1200"
+                  alt="Sanjib Biswal"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Decorative elements */}
