@@ -77,7 +77,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://drive.google.com/uc?export=download&id=17R1juNVC7bA84sYkIklCjsSXK-LkKOyy"
+              href="https://drive.google.com/file/d/17R1juNVC7bA84sYkIklCjsSXK-LkKOyy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full btn-secondary mt-4 inline-flex items-center justify-center gap-2"
