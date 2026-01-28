@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Resume Button */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://drive.google.com/file/d/17R1juNVC7bA84sYkIklCjsSXK-LkKOyy/view?usp=sharing"
+              href="https://docs.google.com/uc?export=download&id=17R1juNVC7bA84sYkIklCjsSXK-LkKOyy"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary inline-flex items-center gap-2"
